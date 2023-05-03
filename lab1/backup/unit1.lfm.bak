@@ -1,0 +1,77 @@
+object Form1: TForm1
+  Left = 1149
+  Height = 240
+  Top = 223
+  Width = 597
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 597
+  LCLVersion = '2.0.8.0'
+  object Label1: TLabel
+    Left = 128
+    Height = 40
+    Hint = 'Программа вычислит скорость, с которой спортсмен пробижал дистанцию'
+    Top = 24
+    Width = 264
+    AutoSize = False
+    Caption = 'Программа вычислит скорость, с которой'#13#10'        спортсмен пробижал дистанцию'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 44
+    Height = 15
+    Top = 58
+    Width = 74
+    Caption = 'Дистанция, м'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 45
+    Height = 15
+    Top = 99
+    Width = 58
+    Caption = 'время, сек'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 44
+    Height = 65
+    Top = 136
+    Width = 132
+    AutoSize = False
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 200
+    Height = 25
+    Top = 144
+    Width = 75
+    Caption = 'Вычислить '
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 200
+    Height = 25
+    Top = 182
+    Width = 75
+    Caption = 'Завершить'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 144
+    Height = 23
+    Top = 58
+    Width = 80
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 144
+    Height = 23
+    Top = 91
+    Width = 80
+    TabOrder = 3
+  end
+end
