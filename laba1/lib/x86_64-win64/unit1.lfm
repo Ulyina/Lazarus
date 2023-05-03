@@ -1,0 +1,84 @@
+object Form1: TForm1
+  Left = 637
+  Height = 366
+  Top = 185
+  Width = 455
+  Caption = 'Form1'
+  ClientHeight = 366
+  ClientWidth = 455
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clBlack
+  Font.Height = -16
+  Font.Name = 'Segoe UI'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '2.0.8.0'
+  object Label1: TLabel
+    Left = 54
+    Height = 41
+    Top = 16
+    Width = 322
+    AutoSize = False
+    Caption = 'Программа вычислиьт скорость, с которой'#13#10'       спортсмен пробежал дистанцию  '
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 53
+    Height = 21
+    Top = 76
+    Width = 96
+    Caption = 'Дистанция, м'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 53
+    Height = 21
+    Top = 120
+    Width = 75
+    Caption = 'Время, сек'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 54
+    Height = 107
+    Top = 165
+    Width = 154
+    AutoSize = False
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 172
+    Height = 29
+    Top = 76
+    Width = 80
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 172
+    Height = 29
+    Top = 120
+    Width = 80
+    OnChange = Edit2Change
+    OnKeyPress = Edit2KeyPress
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 234
+    Height = 25
+    Top = 160
+    Width = 102
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 234
+    Height = 25
+    Top = 206
+    Width = 99
+    Caption = 'Завершить'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+end
