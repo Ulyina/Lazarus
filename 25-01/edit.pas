@@ -15,11 +15,13 @@ type
     bSave: TBitBtn;
     bCancel: TBitBtn;
     CBNote: TComboBox;
+    eCountry: TEdit;
     eName: TEdit;
     eTelephone: TEdit;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
+    Label4: TLabel;
     procedure FormShow(Sender: TObject);
   private
 
@@ -40,6 +42,7 @@ procedure TfEdit.FormShow(Sender: TObject);
 begin
  eName.SetFocus;
 end;
+
 
 end.
 

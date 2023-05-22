@@ -1,0 +1,104 @@
+object fImage: TfImage
+  Left = 326
+  Height = 365
+  Top = 291
+  Width = 1373
+  Caption = 'Аэропорта '
+  ClientHeight = 365
+  ClientWidth = 1373
+  Color = 16315629
+  DesignTimePPI = 168
+  LCLVersion = '2.2.6.0'
+  object bSher: TButton
+    Left = 88
+    Height = 44
+    Top = 192
+    Width = 210
+    Caption = 'Шереметьево'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = bSherClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object bDomo: TButton
+    Left = 352
+    Height = 44
+    Top = 192
+    Width = 210
+    Caption = 'Домодедово'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = bDomoClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object bVnyk: TButton
+    Left = 768
+    Height = 44
+    Top = 192
+    Width = 210
+    Caption = 'Внуково'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = bVnykClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object bTlmch: TButton
+    Left = 1040
+    Height = 44
+    Top = 192
+    Width = 210
+    Caption = 'Толмачёво'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = bTlmchClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 45
+    Top = 72
+    Width = 1329
+    Caption = 'Нажмите на интересующий Вас ниже объект, чтобы узнать общую информацию'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -33
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object bClose: TButton
+    Left = 568
+    Height = 44
+    Top = 288
+    Width = 210
+    Caption = 'Выйти'
+    Color = 9541876
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -33
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = bCloseClick
+    ParentFont = False
+    TabOrder = 4
+  end
+end

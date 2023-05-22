@@ -1,12 +1,13 @@
 object fEdit: TfEdit
-  Left = 344
-  Height = 225
-  Top = 127
+  Left = 334
+  Height = 302
+  Top = 476
   Width = 400
   BorderStyle = bsDialog
-  Caption = 'Редактор контактов'
-  ClientHeight = 225
+  Caption = 'Редактор'
+  ClientHeight = 302
   ClientWidth = 400
+  Color = 16777190
   OnShow = FormShow
   Position = poMainFormCenter
   LCLVersion = '2.2.6.0'
@@ -14,8 +15,8 @@ object fEdit: TfEdit
     Left = 16
     Height = 15
     Top = 8
-    Width = 125
-    Caption = 'Укажите имя контакта:'
+    Width = 79
+    Caption = 'Укажите ФИО:'
     ParentColor = False
   end
   object eName: TEdit
@@ -29,8 +30,8 @@ object fEdit: TfEdit
     Left = 16
     Height = 15
     Top = 56
-    Width = 99
-    Caption = 'Укажите телефон:'
+    Width = 131
+    Caption = 'Укажите номер богажа:'
     ParentColor = False
   end
   object eTelephone: TEdit
@@ -44,8 +45,8 @@ object fEdit: TfEdit
     Left = 16
     Height = 15
     Top = 104
-    Width = 135
-    Caption = 'Выберите тип телефона:'
+    Width = 112
+    Caption = 'Выберите аэропорт:'
     ParentColor = False
   end
   object CBNote: TComboBox
@@ -56,34 +57,49 @@ object fEdit: TfEdit
     ItemHeight = 15
     ItemIndex = 0
     Items.Strings = (
-      'Мобильный'
-      'Домашний'
-      'Служебный'
-      'Соседский'
+      'Шереметьево'
+      'Домодево'
+      'Внуково'
+      'Толмачёва'
     )
     TabOrder = 2
-    Text = 'Мобильный'
+    Text = 'Шереметьево'
   end
   object bSave: TBitBtn
     Left = 16
     Height = 30
-    Top = 168
+    Top = 245
     Width = 160
-    Caption = 'Сохранить контакт'
+    Caption = 'Сохранить'
     Default = True
     Kind = bkOK
     ModalResult = 1
     TabOrder = 3
   end
   object bCancel: TBitBtn
-    Left = 208
+    Left = 219
     Height = 30
-    Top = 168
+    Top = 245
     Width = 160
     Cancel = True
     DefaultCaption = True
     Kind = bkCancel
     ModalResult = 2
     TabOrder = 4
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 15
+    Top = 160
+    Width = 103
+    Caption = 'Город назначения:'
+    ParentColor = False
+  end
+  object eCountry: TEdit
+    Left = 16
+    Height = 23
+    Top = 190
+    Width = 210
+    TabOrder = 5
   end
 end
